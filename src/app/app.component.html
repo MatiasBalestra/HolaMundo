@@ -318,12 +318,16 @@
   <!-- <h1>¡Hola, {{title}}! </h1> -->
 
   <!-- Input para trabajar con NgModel -->
-  <input type="text" placeholder="Nombre del Usuario" [(ngModel)]="usuario" />
+  <!-- <input type="text" placeholder="Nombre del Usuario" [(ngModel)]="usuario" /> -->
 
 
 <!-- Coloco el mensaje emitter que cree antes y ejecuto la funcion que va recibir el evento -->
-  <app-saludo [nombre]="usuario" (mensajeEmitter1)="recibirMensajeDelHijo($event)" (mensajeEmitter2)="recibirMensajeDelHijo2($event)"></app-saludo>
+  <!-- <app-saludo [nombre]="usuario" (mensajeEmitter1)="recibirMensajeDelHijo($event)" (mensajeEmitter2)="recibirMensajeDelHijo2($event)"></app-saludo> -->
 
+  <app-lista-contactos></app-lista-contactos>
+
+<!-- Ejemplo peticion HTTP -->
+<app-login-form></app-login-form>
 </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
